@@ -1,0 +1,58 @@
+#IndexBody{
+    background-color:rgb(137, 188, 201);
+}
+
+#IndexSpan{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-style: bold;
+    font-weight: bold;
+    color: rgb(226, 43, 58);
+    text-decoration: underline;
+}
+
+#relatedpages{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(194, 74, 74);
+}
+
+.Page2Image{
+    text-align: center;
+}
+
+#ImageIdInDiv{
+    border-radius: 30px;
+    border: 2px solid rgb(128, 4, 0);
+}
+#ImageInDiv2{
+    border-radius: 30px;
+    border: 2px solid  rgb(128, 4, 0);
+    height: 200px;
+    width: 300px;
+}
+
+#Page3list{    text-align: left;
+}
+.divhead{
+    color:burlywood;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.list{
+    color:crimson;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+#Definitionlist{
+    text-align: center;
+    font-size: 30px;
+    color:darkslategrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 50px;
+}
+

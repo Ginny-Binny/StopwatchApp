@@ -1,0 +1,241 @@
+
+{
+    "upgrades_stages": [2190, 3600, 5700, 8600, 12400, 17500, 24000, 34000, 47500, 66500, 93000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 4,
+        "parts": {
+            "uncommon": {
+                "speed": 4,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 4
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 7,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 9,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 11,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 7,
+                "handl": 7,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/DZ9i8E6.png"],
+    "decals": [],
+    "shortcuts": [],
+    "car_id": "10",
+    "model": "ELISE SPRINT 220",
+    "brand": "LOTUS",
+    "max_star": 4,
+    "refill": "15mn",
+    "added": "Update 1",
+    "fuels": 5,
+    "rarity": "Rare",
+    "class": "D",
+    "stats": {
+        "0": {
+            "speed": 234,
+            "acceleration": 59.5,
+            "handling": 54.8,
+            "nitro": 47.82
+        },
+        "1": {
+            "speed": 243,
+            "acceleration": 64.15,
+            "handling": 60.66,
+            "nitro": 54
+        },
+        "2": {
+            "speed": 252.2,
+            "acceleration": 69.98,
+            "handling": 68.03,
+            "nitro": 60.38
+        },
+        "3": {
+            "speed": 261.7,
+            "acceleration": 75.96,
+            "handling": 75.56,
+            "nitro": 66.92
+        },
+        "4": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "5": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "6": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "gold": {
+            "speed": 270,
+            "acceleration": 82.25,
+            "handling": 83.47,
+            "nitro": 72.71
+        }
+    },
+    "blueprints": {
+        "1": 10,
+        "2": 12,
+        "3": 18,
+        "4": 28,
+        "5": null,
+        "6": null
+    },
+    "ranks": {
+        "0": 587,
+        "1": 1004,
+        "2": 1468,
+        "3": 1942,
+        "4": 2390,
+        "5": null,
+        "6": null,
+        "gold": 2390
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 7,
+            "cost_per_import": 10000
+        },
+        "rares": {
+            "per_stat": 2,
+            "cost_per_import": 20000
+        },
+        "epics": {
+            "per_stat": 1,
+            "cost_per_import": 60000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": 282,
+        "blue": 282,
+        "orange": 282,
+        "shockwave": 282
+    },
+    "drift_speed": 240,
+    "shop": {
+        "epic": 6000,
+        "bp": {
+            "group": 3,
+            "tc": null
+        }
+    },
+    "review": null,
+    "start_accel": "00:04.370",
+    "comments": "",
+    "__v": 0,
+    "air_speed": 363,
+    "walltest": {
+        "timer": null,
+        "speed": null
+    },
+    "specs": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "wheelbase": null,
+        "ground_clearance": {
+            "from": null,
+            "to": null
+        },
+        "weight": null,
+        "weight_distribution": null,
+        "seats": null,
+        "doors": null,
+        "body": null,
+        "power": null,
+        "torque": null,
+        "engine": null,
+        "drive_type": null,
+        "engine_placement": null,
+        "gearbox": null,
+        "top_speed": null,
+        "to100": null,
+        "to200": null,
+        "front_tyres": null,
+        "rear_tyres": null
+    }
+}

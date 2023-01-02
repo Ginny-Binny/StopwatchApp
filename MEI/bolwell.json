@@ -1,0 +1,245 @@
+[{
+    "_id": {
+        "$oid": "62518e9cea3c778842f98cb5"
+    },
+
+    "upgrades_stages": [5060, 8300, 13200, 19800, 28600, 40000, 56000, 78500, 110000, 154000, 215000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 4,
+        "parts": {
+            "uncommon": {
+                "speed": 3,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 3
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 7,
+        "parts": {
+            "uncommon": {
+                "speed": 5,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 5
+            },
+            "rare": {
+                "speed": 1,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 1
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 9,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 3,
+                "accel": 3,
+                "handl": 3,
+                "nitro": 3
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 11,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 3,
+                "accel": 3,
+                "handl": 3,
+                "nitro": 3
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/EX40ZsM.png"],
+    "decals": [],
+    "shortcuts": ["MK X"],
+    "car_id": "167",
+    "model": "MK X NAGARI 500",
+    "brand": "BOLWELL",
+    "max_star": 4,
+    "refill": "50mn",
+    "added": "Update 24",
+    "fuels": 5,
+    "rarity": "Rare",
+    "class": "C",
+    "stats": {
+        "0": {
+            "speed": 300,
+            "acceleration": 73,
+            "handling": 44.09,
+            "nitro": 37.23
+        },
+        "1": {
+            "speed": 303.2,
+            "acceleration": 74.72,
+            "handling": 48.47,
+            "nitro": 43
+        },
+        "2": {
+            "speed": 307.3,
+            "acceleration": 77.08,
+            "handling": 60.86,
+            "nitro": 57.08
+        },
+        "3": {
+            "speed": 314.6,
+            "acceleration": 81.62,
+            "handling": 65.85,
+            "nitro": 62.99
+        },
+        "4": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "5": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "6": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "gold": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        }
+    },
+    "blueprints": {
+        "1": 50,
+        "2": 29,
+        "3": 38,
+        "4": 48,
+        "5": null,
+        "6": null
+    },
+    "ranks": {
+        "0": 1582,
+        "1": 1853,
+        "2": 2211,
+        "3": 2564,
+        "4": 2857,
+        "5": null,
+        "6": null,
+        "gold": null
+
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 6,
+            "cost_per_import": 30000
+        },
+        "rares": {
+            "per_stat": 3,
+            "cost_per_import": 60000
+        },
+        "epics": {
+            "per_stat": 1,
+            "cost_per_import": 180000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": null,
+        "blue": null,
+        "orange": null,
+        "shockwave": null
+    },
+    "drift_speed": 0,
+    "shop": {
+        "epic": null,
+        "bp": {
+            "group": null,
+            "tc": null
+        }
+    },
+    "review": null,
+    "start_accel": "",
+    "comments": "",
+    "__v": 0,
+    "air_speed": null,
+    "walltest": {
+        "timer": null,
+        "speed": null
+    },
+    "specs": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "wheelbase": null,
+        "ground_clearance": {
+            "from": null,
+            "to": null
+        },
+        "weight": null,
+        "weight_distribution": null,
+        "seats": null,
+        "doors": null,
+        "body": null,
+        "power": null,
+        "torque": null,
+        "engine": null,
+        "drive_type": null,
+        "engine_placement": null,
+        "gearbox": null,
+        "top_speed": null,
+        "to100": null,
+        "to200": null,
+        "front_tyres": null,
+        "rear_tyres": null
+    }
+}]

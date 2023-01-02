@@ -1,0 +1,241 @@
+
+{
+    "upgrades_stages": [4370, 7100, 11400, 17100, 24700, 34500, 48500, 68000, 95000, 133000, 186000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 4,
+        "parts": {
+            "uncommon": {
+                "speed": 4,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 4
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 7,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 9,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 11,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 7,
+                "handl": 7,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/WFbWRn6.png"],
+    "decals": [],
+    "shortcuts": [],
+    "car_id": "112",
+    "model": "I8 ROADSTER",
+    "brand": "BMW",
+    "max_star": 4,
+    "refill": "15mn",
+    "added": "Update 16",
+    "fuels": 5,
+    "rarity": "Rare",
+    "class": "D",
+    "stats": {
+        "0": {
+            "speed": 250,
+            "acceleration": 58.6,
+            "handling": 51.16,
+            "nitro": 48.33
+        },
+        "1": {
+            "speed": 256.9,
+            "acceleration": 62.88,
+            "handling": 56.76,
+            "nitro": 52.95
+        },
+        "2": {
+            "speed": 264.4,
+            "acceleration": 68.31,
+            "handling": 63.8,
+            "nitro": 57.59
+        },
+        "3": {
+            "speed": 271.7,
+            "acceleration": 73.86,
+            "handling": 71,
+            "nitro": 62.57
+        },
+        "4": {
+            "speed": 277,
+            "acceleration": 78.78,
+            "handling": 77.39,
+            "nitro": 66.06
+        },
+        "5": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "6": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "gold": {
+            "speed": 278.3,
+            "acceleration": 79.72,
+            "handling": 78.61,
+            "nitro": 66.88
+        }
+    },
+    "blueprints": {
+        "1": 30,
+        "2": 23,
+        "3": 33,
+        "4": 42,
+        "5": null,
+        "6": null
+    },
+    "ranks": {
+        "0": 715,
+        "1": 1069,
+        "2": 1462,
+        "3": 1864,
+        "4": 2179,
+        "5": null,
+        "6": null,
+        "gold": 2247
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 7,
+            "cost_per_import": 20000
+        },
+        "rares": {
+            "per_stat": 2,
+            "cost_per_import": 40000
+        },
+        "epics": {
+            "per_stat": 1,
+            "cost_per_import": 120000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": 290,
+        "blue": 299,
+        "orange": 290,
+        "shockwave": 290
+    },
+    "drift_speed": 229,
+    "shop": {
+        "epic": null,
+        "bp": {
+            "group": null,
+            "tc": null
+        }
+    },
+    "review": null,
+    "start_accel": "00:04.467",
+    "comments": "",
+    "__v": 0,
+    "air_speed": 382,
+    "walltest": {
+        "timer": null,
+        "speed": null
+    },
+    "specs": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "wheelbase": null,
+        "ground_clearance": {
+            "from": null,
+            "to": null
+        },
+        "weight": null,
+        "weight_distribution": null,
+        "seats": null,
+        "doors": null,
+        "body": null,
+        "power": null,
+        "torque": null,
+        "engine": null,
+        "drive_type": null,
+        "engine_placement": null,
+        "gearbox": null,
+        "top_speed": null,
+        "to100": null,
+        "to200": null,
+        "front_tyres": null,
+        "rear_tyres": null
+    }
+}

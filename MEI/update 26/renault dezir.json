@@ -1,0 +1,242 @@
+[{"_id": {
+    "$oid": "62e44378319af0acfa3684b4"
+},
+    "upgrades_stages": [4370, 7100, 11400, 17100, 24700, 34500, 48500, 68000, 95000, 133000, 186000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 4,
+        "parts": {
+            "uncommon": {
+                "speed": 4,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 4
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 7,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 9,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 11,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 7,
+                "handl": 7,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/ziEHjyl.png"],
+    "decals": [],
+    "shortcuts": [],
+    "car_id": "175",
+    "model": "DEZIR",
+    "brand": "RENAULT",
+    "max_star": 4,
+    "refill": "15mn",
+    "added": "Update 26",
+    "fuels": 5,
+    "rarity": "Rare",
+    "class": "D",
+    "stats": {
+        "0": {
+            "speed": 275.7,
+            "acceleration": 55,
+            "handling": 44.86,
+            "nitro": 51.55
+        },
+        "1": {
+            "speed": 281.3,
+            "acceleration": 57.88,
+            "handling": 51.56,
+            "nitro": 56.91
+        },
+        "2": {
+            "speed": 284.60,
+            "acceleration": 59.86,
+            "handling": 56.16,
+            "nitro": 60.07
+        },
+        "3": {
+            "speed": 289.2,
+            "acceleration": 62.65,
+            "handling": 62.62,
+            "nitro": 64.52
+        },
+        "4": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "5": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "6": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "gold": {
+            "speed": 293.2,
+            "acceleration": 65.56,
+            "handling": 69.43,
+            "nitro": 68.44
+        }
+    },
+    "blueprints": {
+        "1": 30,
+        "2": 23,
+        "3": 33,
+        "4": 42,
+        "5": null,
+        "6": null
+    },
+    "ranks": {
+        "0": 889,
+        "1": 1283,
+        "2": 1531,
+        "3": 1879,
+        "4": null,
+        "5": null,
+        "6": null,
+        "gold": 2213
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 7,
+            "cost_per_import": 20000
+        },
+        "rares": {
+            "per_stat": 2,
+            "cost_per_import": 40000
+        },
+        "epics": {
+            "per_stat": 1,
+            "cost_per_import": 120000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": 293,
+        "blue": 293,
+        "orange": 293,
+        "shockwave": 293
+    },
+    "drift_speed": null,
+    "shop": {
+        "epic": null,
+        "bp": {
+            "group": null,
+            "tc": null
+        }
+    },
+    "review": null,
+    "start_accel": null,
+    "comments": "",
+    "__v": 0,
+    "air_speed": null,
+    "walltest": {
+        "timer": null,
+        "speed": null
+    },
+    "specs": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "wheelbase": null,
+        "ground_clearance": {
+            "from": null,
+            "to": null
+        },
+        "weight": null,
+        "weight_distribution": null,
+        "seats": null,
+        "doors": null,
+        "body": null,
+        "power": null,
+        "torque": null,
+        "engine": null,
+        "drive_type": null,
+        "engine_placement": null,
+        "gearbox": null,
+        "top_speed": null,
+        "to100": null,
+        "to200": null,
+        "front_tyres": null,
+        "rear_tyres": null
+    }
+}]

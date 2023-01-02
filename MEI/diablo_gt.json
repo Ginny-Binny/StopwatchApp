@@ -1,0 +1,271 @@
+[{
+    "_id": {
+        "$oid": "62912fd1dcc37c245b2dda7c"
+    },
+
+    "upgrades_stages": [7130, 11600, 18600, 27900, 40300, 56500, 79000, 110500, 155000, 216500, 303000, 425000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 3,
+        "parts": {
+            "uncommon": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 6,
+        "parts": {
+            "uncommon": {
+                "speed": 5,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 5
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 8,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 1,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 1
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 10,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 8,
+                "handl": 8,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 5,
+        "stage_to_reach": 12,
+        "parts": {
+            "uncommon": {
+                "speed": 9,
+                "accel": 9,
+                "handl": 9,
+                "nitro": 9
+            },
+            "rare": {
+                "speed": 4,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 4
+            },
+            "epic": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/j3JVCPv.png"],
+    "decals": [{
+        "images": null,
+        "available": null,
+        "icon": null
+    }],
+    "shortcuts": ["DIABLO"],
+    "car_id": "170",
+    "model": "DIABLO GT",
+    "brand": "LAMBORGHINI",
+    "max_star": 5,
+    "refill": "1h15",
+    "added": "Update 25",
+    "fuels": 4,
+    "rarity": "Epic",
+    "class": "C",
+    "stats": {
+        "0": {
+            "speed": 338,
+            "acceleration": 66.7,
+            "handling": 44.21,
+            "nitro": 37.5
+        },
+        "1": {
+            "speed": 339.3,
+            "acceleration": 67.63,
+            "handling": 46.52,
+            "nitro": 40.19
+        },
+        "2": {
+            "speed": 341.2,
+            "acceleration": 68.88,
+            "handling": 49.63,
+            "nitro": 44.27
+        },
+        "3": {
+            "speed": 343,
+            "acceleration": 70.02,
+            "handling": 52.46,
+            "nitro": 47.78
+        },
+        "4": {
+            "speed": 344.8,
+            "acceleration": 71.76,
+            "handling": 56.8,
+            "nitro": 51.16
+        },
+        "5": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "6": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "gold": {
+            "speed": 348.6,
+            "acceleration": 74.03,
+            "handling": 62.5,
+            "nitro": 58.63
+        }
+    },
+    "blueprints": {
+        "1": 35,
+        "2": 15,
+        "3": 21,
+        "4": 28,
+        "5": 35,
+        "6": null
+    },
+    "ranks": {
+        "0": 2211,
+        "1": 2422,
+        "2": 2723,
+        "3": 2990,
+        "4": 3316,
+        "5": null,
+        "6": null,
+        "gold": 3871
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 9,
+            "cost_per_import": 40000
+        },
+        "rares": {
+            "per_stat": 4,
+            "cost_per_import": 80000
+        },
+        "epics": {
+            "per_stat": 2,
+            "cost_per_import": 240000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": null,
+        "blue": null,
+        "orange": null,
+        "shockwave": null
+    },
+    "drift_speed": null,
+    "shop": {
+        "epic": null,
+        "bp": {
+            "group": null,
+            "tc": null
+        }
+    },
+    "review": null,
+    "start_accel": null,
+    "comments": "",
+    "__v": 0,
+    "air_speed": null,
+    "walltest": {
+        "timer": null,
+        "speed": null
+    },
+    "specs": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "wheelbase": null,
+        "ground_clearance": {
+            "from": null,
+            "to": null
+        },
+        "weight": null,
+        "weight_distribution": null,
+        "seats": null,
+        "doors": null,
+        "body": null,
+        "power": null,
+        "torque": null,
+        "engine": null,
+        "drive_type": null,
+        "engine_placement": null,
+        "gearbox": null,
+        "top_speed": null,
+        "to100": null,
+        "to200": null,
+        "front_tyres": null,
+        "rear_tyres": null
+    }
+}]

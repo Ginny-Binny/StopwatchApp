@@ -1,0 +1,99 @@
+head
+	script(src="//code.jquery.com/jquery-1.11.1.min.js")
+	link#bootstrap-css(href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet")
+	style
+		include ./style.css
+	script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+	script
+		include script.js
+	title=title
+	meta(name="description", content=`Asphalt 9 MEI Database
+${track.location} ${track.name} Career Races/Guides`)
+	meta(name="viewport", content=`width=device-width, initial-scale=1`)
+
+#wrapper.animate
+	nav.navbar.header-top.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+		span.navbar-toggler-icon.modal-close
+		a.navbar-brand(href="/") MEI - Database
+		button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+		#navbarText.collapse.navbar-collapse
+			ul.navbar-nav.animate.side-nav
+				li.nav-item
+					a.nav-link(href="/")
+						| Home
+						span.sr-only(current)
+					each nav in navs
+						a.nav-link(href=nav.path)
+							| #{nav.name}
+							span.sr-only(current)
+			ul.navbar-nav.ml-md-auto.d-md-flex
+				li.nav-item
+					a.nav-link(href="https://discord.gg/KgKMgxd" target="_blank")
+						| Discord
+						span.sr-only(current)
+	.container-fluid
+		.row
+			.col
+				.card
+					.card-body
+						h5.card-title= `${track.location.toUpperCase()} - ${track.name}`
+						p.card-text
+							| #{track.name} is a #{track.time}s track.
+							br
+		.row
+			.col
+				.card
+					.card-body
+						h5.card-title= `Career races: ${lb.length}`
+						table.table
+							thead
+								tr
+								th(scope="col") #[strong CHAPTER]
+								th(scope="col") #[strong SEASON]
+								th(scope="col") #[strong RACE]
+								th(scope="col") #[strong MODE]
+								th(scope="col") #[strong RANK]
+							tbody
+								each val in lb
+									tr
+									th(scope="row")=val.chap
+									td
+										| #[strong #{val.season}]
+									td
+										| #[strong #[a(href=`/race?r=${val.uid}`)=val.race]]
+									td
+										| #[strong #{val.mode}]
+									td
+										| #[strong #{val.rank}]
+								if lb.length == 0
+									tr
+									th(scope="row") This track is not available in Career.
+		.row
+			.col
+				.card
+					.card-body
+						h5.card-title WRs/Best runs on this track
+						table.table
+							thead
+								tr
+								th(scope="col") #[strong #]
+								th(scope="col") #[strong PLAYER]
+								th(scope="col") #[strong CAR]
+								th(scope="col") #[strong RANK]
+								th(scope="col") #[strong TIME]
+							tbody
+								each val in leaderboard
+									tr
+									th(scope="row")=val.pos
+									td
+										| #[strong #[a(href=val.channel target="_blank")=val.player]]
+									td
+										| #[strong #{val.car}]
+									td
+										| #[strong #{val.rank}]
+									td
+										| #[strong #[a(href=val.video target="_blank")=val.time]]
+								if leaderboard.length == 0
+									tr
+									th(scope="row") No runs here, for now!

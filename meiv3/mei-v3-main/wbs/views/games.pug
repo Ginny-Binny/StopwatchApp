@@ -1,0 +1,99 @@
+head
+	script(src="//code.jquery.com/jquery-1.11.1.min.js")
+	link#bootstrap-css(href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet")
+	style
+		include ./style.css
+	script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+	script
+		include script.js
+	title=title
+	meta(name="description", content=`Asphalt 9 MEI Database
+Minigames`)
+	meta(name="viewport", content=`width=device-width, initial-scale=1`)
+
+#wrapper.animate
+	nav.navbar.header-top.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+		span.navbar-toggler-icon.modal-close
+		a.navbar-brand(href="/") MEI - Database
+		button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+		#navbarText.collapse.navbar-collapse
+			ul.navbar-nav.animate.side-nav
+				li.nav-item
+					a.nav-link(href="/")
+						| Home
+						span.sr-only(current)
+					each nav in navs
+						a.nav-link(href=nav.path)
+							| #{nav.name}
+							span.sr-only(current)
+			ul.navbar-nav.ml-md-auto.d-md-flex
+				li.nav-item
+					a.nav-link(href="https://discord.gg/KgKMgxd" target="_blank")
+						| Discord
+						span.sr-only(current)
+	.container-fluid
+		.row
+			.col
+				.card(style={
+					"margin-bottom": "10px",
+					"border-radius": "0",
+					"box-shadow": "0 3px 5px rgba(0, 0, 0, .1)",
+					"background": "#636363"
+				})
+					.card-body
+						h5.card-title Guess The Car
+						p.card-text
+							| A guess the car game with multiple modes.
+							.row
+								.col
+									.card(style={
+										"margin-bottom": "10px",
+										"border-radius": "0",
+										"box-shadow": "0 3px 5px rgba(0, 0, 0, .1)",
+										"background": "#3bca0f"
+									}, onclick=`location.href="/games/guessthecar/easy"`)
+										.card-body
+											h5.card-title EASY
+							.row
+								.col
+									.card(style={
+										"margin-bottom": "10px",
+										"border-radius": "0",
+										"box-shadow": "0 3px 5px rgba(0, 0, 0, .1)",
+										"background": "#0040a0"
+									}, onclick=`location.href="/games/guessthecar/normal"`)
+										.card-body
+											h5.card-title NORMAL
+							.row
+								.col
+									.card(style={
+										"margin-bottom": "10px",
+										"border-radius": "0",
+										"box-shadow": "0 3px 5px rgba(0, 0, 0, .1)",
+										"background": "#c5ab14"
+									}, onclick=`location.href="/games/guessthecar/hard"`)
+										.card-body
+											h5.card-title HARD
+							.row
+								.col
+									.card(style={
+										"margin-bottom": "10px",
+										"border-radius": "0",
+										"box-shadow": "0 3px 5px rgba(0, 0, 0, .1)",
+										"background": "#ff0b0b"
+									}, onclick=`location.href="/games/guessthecar/xtrem"`)
+										.card-body
+											h5.card-title XTREM
+			.col
+				.card
+					.card-body
+						h5.card-title Nitro-Brake Test
+						p.card-text
+							| COMING SOON
+			.col
+				.card
+					.card-body
+						h5.card-title Racer
+						p.card-text
+							| COMING SOON

@@ -1,0 +1,213 @@
+[{
+    "_id": {
+        "$oid": "62912cfbdcc37c245b2dda7b"
+    },
+
+    "upgrades_stages": [5060, 8300, 13200, 19800, 28600, 40000, 56000, 78500, 110000, 154000, 215000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 4,
+        "parts": {
+            "uncommon": {
+                "speed": 3,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 3
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 7,
+        "parts": {
+            "uncommon": {
+                "speed": 5,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 5
+            },
+            "rare": {
+                "speed": 1,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 1
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 9,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 3,
+                "accel": 3,
+                "handl": 3,
+                "nitro": 3
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 11,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 3,
+                "accel": 3,
+                "handl": 3,
+                "nitro": 3
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/50rsGVD.png"],
+    "decals": [],
+    "shortcuts": ["Miura"],
+    "car_id": "169",
+    "model": "MIURA CONCEPT",
+    "brand": "LAMBORGHINI",
+    "max_star": 5,
+    "refill": "1h15",
+    "added": "Update 25",
+    "fuels": 4,
+    "rarity": "Epic",
+    "class": "C",
+    "stats": {
+        "0": {
+            "speed": 330,
+            "acceleration": 65.8,
+            "handling": 39.8,
+            "nitro": 38.82
+        },
+        "1": {
+            "speed": 332.1,
+            "acceleration": 66.61,
+            "handling": 41.74,
+            "nitro": 41.56
+        },
+        "2": {
+            "speed": 335.4,
+            "acceleration": 67.73,
+            "handling": 44.34,
+            "nitro": 45.73
+        },
+        "3": {
+            "speed": 337.9,
+            "acceleration": 68.74,
+            "handling": 46.69,
+            "nitro": 49.31
+        },
+        "4": {
+            "speed": 340.4,
+            "acceleration": 70.28,
+            "handling": 50.27,
+            "nitro": 52.75
+        },
+        "5": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "6": {
+            "speed": null,
+            "acceleration": null,
+            "handling": null,
+            "nitro": null
+        },
+        "gold": {
+            "speed": 346.2,
+            "acceleration": 72.32,
+            "handling": 54.97,
+            "nitro": 60.38
+        }
+    },
+    "blueprints": {
+        "1": "key",
+        "2": 25,
+        "3": null
+    },
+    "ranks": {
+        "0": 1864,
+        "1": 2095,
+        "2": 2427,
+        "3": 2721,
+        "4": 3079,
+        "5": null,
+        "6": null,
+        "gold": 3690
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 6,
+            "cost_per_import": 30000
+        },
+        "rares": {
+            "per_stat": 3,
+            "cost_per_import": 60000
+        },
+        "epics": {
+            "per_stat": 1,
+            "cost_per_import": 180000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": null,
+        "blue": null,
+        "orange": null,
+        "shockwave": null
+    },
+    "shop": {
+        "bp": {}
+    },
+    "start_accel": null,
+    "comments": "",
+    "__v": 0,
+    "walltest": {
+        "timer": null,
+        "speed": null
+    },
+    "specs": {
+        "ground_clearance": {}
+    },
+    "air_speed": null,
+    "drift_speed": null
+}]

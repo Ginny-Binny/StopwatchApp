@@ -1,0 +1,283 @@
+body {
+	background: #444444;
+	font-size: larger;
+}
+
+#wrapper {
+	padding: 90px 8px;
+	font-size: xx-large;
+}
+
+.navbar-expand-lg .navbar-nav.side-nav {
+	flex-direction: column;
+	font-size: large;
+}
+
+.card {
+	margin-bottom: 10px;
+	border-radius: 0;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+	background: #222222;
+}
+
+.card h5 {
+	color: white;
+	font-size: 18px;
+}
+
+.card p {
+	color: #dfdfdf;
+	font-size: 20px;
+}
+
+.card .specs_table {
+	display: inline-block;
+	padding: 15px;
+	padding-left: 50px;
+}
+
+.card th {
+	color: white;
+	font-size: smaller;
+}
+
+.card td {
+	color: white;
+	font-size: smaller;
+}
+
+.card table {
+	white-space: nowrap;
+	width: 100%;
+}
+
+.header-top {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
+}
+
+.modal-close {
+	display: none
+}
+
+@media(min-width:992px) {
+	body {
+		font-size: larger;
+	}
+
+	#wrapper {
+		font-size: x-large;
+	}
+
+	.card h5 {
+		font-size: 20px;
+	}
+
+	.card p {
+		font-size: 20px;
+	}
+
+	.card th {
+		font-size: large;
+	}
+
+	.card td {
+		font-size: large;
+	}
+
+	.navbar-expand-lg .navbar-nav.side-nav {
+		flex-direction: column;
+		font-size: x-large;
+	}
+
+	.modal-close {
+		display: block;
+		display: block;
+		margin: 7px 20px 4px 0;
+		cursor: pointer;
+	}
+
+	#wrapper {
+		padding: 90px 10px 10px 10px;
+	}
+
+	.navbar-nav.side-nav.open {
+		left: 0;
+	}
+
+	.navbar-nav.side-nav {
+		background: #232527;
+		box-shadow: 2px 1px 2px rgba(0, 0, 0, .1);
+		position: fixed;
+		top: 68px;
+		flex-direction: column !important;
+		left: -220px;
+		width: 200px;
+		overflow-y: auto;
+		bottom: 0;
+		overflow-x: hidden;
+		padding-bottom: 40px;
+	}
+}
+
+.animate {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out
+}
+
+progress {
+	border-radius: 5px;
+	width: 70%;
+	min-width: 70%;
+	height: 5px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0);
+}
+
+progress::-webkit-progress-bar {
+	background-color: rgba(255, 255, 0, 0.137);
+	border-radius: 0px;
+}
+
+progress::-webkit-progress-value {
+	background-color: #33EFF9;
+	border-radius: 0px;
+}
+
+progress.car_bar {
+	width: 100%;
+	height: 5px;
+}
+
+progress.car_bar::-webkit-progress-bar {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+progress.car_bar::-webkit-progress-value {
+	background-color: #C3FB13;
+}
+
+button.add_car {
+	background-color: #C3FB13;
+	border: none;
+	color: black;
+	display: block;
+	font-size: 35px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition-duration: 0.4s;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	line-height: 100px;
+	text-align: center;
+}
+
+button.add_car:hover {
+	background-color: #83a70f;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"]+label::after {
+	content: "";
+	margin-right: 1rem;
+}
+
+input[type="checkbox"]+label::before {
+	content: "";
+	border: 1px solid #C3FB13;
+	padding: 0px .9rem;
+	margin-right: 0.3rem;
+}
+
+input[type="checkbox"]:checked+label::after {
+	content: "";
+}
+
+input[type="checkbox"]:checked+label::before {
+	background-color: #C3FB13;
+}
+
+table#car_parts_distri {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: 3px solid rgb(109, 109, 109);
+	text-align: center;
+}
+
+.popup {
+	background-color: rgb(131, 131, 131);
+	border: 2px solid black;
+    display: none;
+	width: 90%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: -45%;
+	left: 50%;
+	position: fixed;
+}
+
+.overlay#popup_overlay {
+	display: none;
+	position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, .75)
+}
+
+.popup-inner {
+	padding: 10px;
+	display: block;
+	position: absolute;
+	width: 100%;
+}
+
+.popup-inner table#list {
+	display: block;
+	overflow: auto;
+	position:fixed;
+	height: 50%;
+	width: 85%;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+
+h5.popup-title {
+	background-color: rgb(51, 51, 51);
+	color: white;
+	text-align: center;
+	padding: 2px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: xx-large;
+}
+
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+  
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}

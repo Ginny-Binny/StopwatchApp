@@ -1,0 +1,79 @@
+head
+	script(src="//code.jquery.com/jquery-1.11.1.min.js")
+	link#bootstrap-css(href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet")
+	style
+		include ./style.css
+	script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+	script
+		include script.js
+		//- include nextRefresh.js
+	title=title
+	meta(name="description", content=`Asphalt 9 MEI Database
+Home`)
+	meta(name="viewport", content=`width=device-width, initial-scale=1`)
+
+#wrapper.animate
+	nav.navbar.header-top.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+		span.navbar-toggler-icon.modal-close
+		a.navbar-brand(href="/") MEI - Database
+		button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+		#navbarText.collapse.navbar-collapse
+			ul.navbar-nav.animate.side-nav
+				li.nav-item
+					a.nav-link(href="/")
+						| Home
+						span.sr-only(current)
+					each nav in navs
+						a.nav-link(href=nav.path)
+							| #{nav.name}
+							span.sr-only(current)
+			ul.navbar-nav.ml-md-auto.d-md-flex
+				li.nav-item
+					a.nav-link(href="https://discord.gg/KgKMgxd" target="_blank")
+						| Discord
+						span.sr-only(current)
+	.container-fluid
+		if streams.length !== 0
+			.row
+				.col
+					.card
+						.card-body
+							h5.card-title Active Streamers
+							p.card-text
+								each stream in streams 
+									if stream.isLive
+										| 🟩 #[strong #[a(href=stream.url target="_blank") #{stream.name}]] (#{stream.viewers} viewers)
+										br
+		.row
+			.col
+				.card
+					.card-body
+						h5.card-title Hello
+						p.card-text
+							| Discord Server: #[a(href="https://discord.gg/KgKMgxd")=`https://discord.gg/KgKMgxd`]
+							br
+							br
+							| INVITE THE BOT -> #[a(href="https://discord.com/api/oauth2/authorize?client_id=716647677370302465&permissions=448861109569&scope=bot%20applications.commands")="CLICK HERE"] <-
+							br
+							| Used at total of #{stats.total_requests} times. #{stats.guilds} guilds.
+		each row in news
+			.row
+				each article in row
+					.col
+						.card
+							.card-body
+								img(src=article.image, style={
+									"width": "100%",
+									"height": "auto",
+									"padding-bottom": "20px",
+								})
+								h5.card-title(style={"font-size": "120%"}) #[a(href=`/article?id=${article.news_id}`) #{article.title}]
+								p.card-text 
+									each line in article.description
+										| #{line}
+										br
+									br
+									br
+									| #{article.date} - Written by #{article.author}
+									a(style={"float": "right"})=`${article.views} views`

@@ -1,0 +1,317 @@
+head
+	script(src="//code.jquery.com/jquery-1.11.1.min.js")
+	link#bootstrap-css(href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet")
+	style
+		include ./style.css
+	script(src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+	script
+		include script.js
+	title=title
+	meta(name="description", content=`Asphalt 9 MEI Database
+${brand} ${model} Stats/Ranks/Upgrades Cost/Import Parts/Images/BPs`)
+	meta(name="viewport", content=`width=device-width, initial-scale=1`)
+
+#wrapper.animate
+	nav.navbar.header-top.fixed-top.navbar-expand-lg.navbar-dark.bg-dark
+		span.navbar-toggler-icon.modal-close
+		a.navbar-brand(href="/") MEI - Database
+		button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+		#navbarText.collapse.navbar-collapse
+			ul.navbar-nav.animate.side-nav
+				li.nav-item
+					a.nav-link(href="/")
+						| Home
+						span.sr-only(current)
+					each nav in navs
+						a.nav-link(href=nav.path)
+							| #{nav.name}
+							span.sr-only(current)
+			ul.navbar-nav.ml-md-auto.d-md-flex
+				li.nav-item
+					a.nav-link(href="https://discord.gg/KgKMgxd" target="_blank")
+						| Discord
+						span.sr-only(current)
+	.container-fluid
+		.row
+			.col
+				.card
+					.card-body
+						h5.card-title
+							a(style={"font-size": "40px", "vertical-align": "sub"})=cclass
+							| &nbsp; &nbsp;#{brand} #{model}
+						p.card-text
+							a(style={"font-size": "20px"}) #{stars}
+							br
+							br
+							|⛽ #{fuels} fuels
+							br
+							|⏱ #{refills_in}
+							br
+							img(src="/imgs/bp.png", style={
+								"max-width": "30px",
+								"max-height": "30px",
+								"width": "auto",
+								"height": "auto",
+							})
+							|&nbsp;#{bps}
+							br
+							if !is_mobile
+								img(src=image, style={
+									"position": "absolute",
+									"top": "0px",
+									"right": "0px",
+									"border-radius": "8px",
+									"padding": "5px",
+									"max-width": "30%",
+									"max-height": "100%",
+									"width": "auto",
+									"height": "auto",
+								})
+							else
+								img(src=image, style={
+									"position": "relative",
+									"bottom": "0px",
+									"right": "0px",
+									"border-radius": "8px",
+									"padding": "5px",
+									"max-width": "100%",
+									"max-height": "100%",
+									"width": "auto",
+									"height": "auto",
+								})
+		if !is_mobile
+			.row
+				each stat in stats_cards
+					div.col
+						.card
+							.card-body
+								h5(style={"font-size": "80%"}).card-title=stat.title
+								p.card-text
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.speed} km/h]
+										br
+										progress(max=520, value=stat.speed)
+									br
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.accel}]
+										br
+										progress(max=120, value=stat.accel)
+									br
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.handl}]
+										br
+										progress(max=120, value=stat.handl)
+									br
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.nitro}]
+										br
+										progress(max=120, value=stat.nitro)
+									br
+									br
+									if stat.no_footer
+										br
+										br
+									else
+										if stat.bp === "key"
+											| 🔑&nbsp;
+											br
+										else
+											if stat.bp == 0
+												br
+											else 
+												| #{stat.bp}&nbsp;
+												img(src="/imgs/bp.png", style={
+													"max-width": "20px",
+													"max-height": "20px",
+													"width": "auto",
+													"height": "auto",
+												})
+												br
+										if stat.cost == 0
+											br
+										else
+											| #{stat.cost}&nbsp;
+											img(src="/imgs/credits.png", style={
+												"max-width": "20px",
+												"max-height": "20px",
+												"width": "auto",
+												"height": "auto",
+											})
+		else
+			each stat in stats_cards
+				div.row
+					.col
+						.card
+							.card-body
+								h5(style={"font-size": "80%"}).card-title=stat.title
+								p.card-text
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.speed} km/h]
+										br
+										progress(max=520, value=stat.speed)
+									br
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.accel}]
+										br
+										progress(max=120, value=stat.accel)
+									br
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.handl}]
+										br
+										progress(max=120, value=stat.handl)
+									br
+									a(style={"color": "#dfdfdf"})
+										| #[strong #{stat.nitro}]
+										br
+										progress(max=120, value=stat.nitro)
+									br
+									br
+									if stat.no_footer
+										br
+										br
+									else
+										if stat.bp === "key"
+											| 🔑&nbsp;
+											br
+										else
+											if stat.bp == 0
+												br
+											else 
+												| #{stat.bp}&nbsp;
+												img(src="/imgs/bp.png", style={
+													"max-width": "20px",
+													"max-height": "20px",
+													"width": "auto",
+													"height": "auto",
+												})
+												br
+										if stat.cost == 0
+											br
+										else
+											| #{stat.cost}&nbsp;
+											img(src="/imgs/credits.png", style={
+												"max-width": "20px",
+												"max-height": "20px",
+												"width": "auto",
+												"height": "auto",
+											})
+		.row
+			.col
+				.card
+					.card-body
+						h5.card-title Upgrades
+						p.card-text
+							each stage in stages
+								| #{stage}
+								br
+						h5.card-title #[strong Parts]
+						p.card-text
+							| #[strong Uncommons:] #{uncommons_per_stage}x#{uncommons_cost_per_import}x4 = #[u #{uncommons_total}]
+							br
+							| #[strong Rares:] #{rares_per_stage}x#{rares_cost_per_import}x4= #[u #{rares_total}]
+							br
+							if epics_per_stage !== 0
+								| #[strong Epics:] #{epics_per_stage}x#{epics_cost_per_import}x4= #[u #{epics_total}]
+								br
+							br
+							| #[strong Stages Total: #{stages_total}]
+							br
+							| #[strong Parts Total: #{parts_total}]
+							br
+							br
+							| #[strong Total: #{gold_cost}]&nbsp;
+							img(src="/imgs/credits.png", style={
+								"max-width": "20px",
+								"max-height": "20px",
+								"width": "auto",
+								"height": "auto",
+							})
+			.col
+				.card
+					.card-body
+						h5.card-title Extra
+						p.card-text
+							if real_accel
+								| #[strong 0 to 200 km/h:] #{real_accel}s (#[a(href="/beststarts")=`#${start_accel_pos}`])
+							else
+								| #[strong 0 to 200 km/h:] ??
+							br
+							br
+							if speeds.yellow == speeds.blue
+								| #[strong All Nitros speed:] #{speeds.yellow} km/h
+							else
+								| #[strong Yellow Nitro:] #{speeds.yellow} km/h
+								br
+								| #[strong Blue Nitro:] #{speeds.blue} km/h
+								br
+								| #[strong Orange Nitro:] #{speeds.orange} km/h
+								br
+								| #[strong Shockwave Nitro:] #{speeds.sw} km/h
+								br
+							br
+							| #[strong Air Speed:] #{speeds.air} km/h
+							br
+							| #[strong Drift Speed:] #{speeds.drift} km/h
+				.card
+					.card-body
+						h5.card-title Legend Store
+						p.card-text
+							| SOON.
+		if specs.engine
+			.row
+				.col
+					.card
+						.card-body
+							h5.card-title IRL Specs
+							p.card-text
+								p.specs_table
+									| #[strong Engine:] #{specs.engine}
+									br
+									| #[strong Drive type:] #{specs.drive_type}
+									br
+									| #[strong Engine placement:] #{specs.engine_placement}
+									br
+									| #[strong Body:] #{specs.body}
+									br
+									| #[strong Gearbox:] #{specs.gearbox}
+									br
+									| #[strong Seats:] #{specs.seats}
+									br
+									| #[strong Doors:] #{specs.doors}
+									br
+								p.specs_table
+									| #[strong Power:] #{specs.power}hp
+									br
+									| #[strong Weight:] #{specs.weight}kg
+									br
+									| #[strong Weight distribution:] #{specs.weight_distribution}
+									br
+									| #[strong Torque:] #{specs.torque}Nm
+									br
+									| #[strong Top speed:] #{specs.top_speed}
+									br
+									| #[strong 0-100km/h:] #{specs.to100}
+									br
+									| #[strong 0-200km/h:] #{specs.to200}
+									br
+								p.specs_table
+									| #[strong Length:] #{specs.length}mm
+									br
+									| #[strong Width:] #{specs.width}mm
+									br
+									| #[strong Height:] #{specs.height}mm
+									br
+									| #[strong Wheelbase:] #{specs.wheelbase}mm
+									br
+									| #[strong Front tyres:] #{specs.front_tyres}mm
+									br
+									| #[strong Rear tyres:] #{specs.rear_tyres}mm
+									br
+									| #[strong Ground clearance:] from #{specs.ground_clearance.from}mm to #{specs.ground_clearance.to}mm
+									br
+								if comments.length !== 0
+									p
+										each line in comments
+											br
+											| #{line}

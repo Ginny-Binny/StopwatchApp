@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Cars",
+		"path": "/cars"
+	},
+	{
+		"name": "Tracks",
+		"path": "/tracks"
+	},
+	{
+		"name": "Events",
+		"path": "/events"
+	},
+	{
+		"name": "0-200",
+		"path": "/beststarts"
+	},
+	{
+		"name": "Packs",
+		"path": "/packs"
+	},
+	{
+		"name": "Multiplayers",
+		"path": "/mps"
+	},
+	{
+		"name": "Timeline",
+		"path": "/timeline"
+	},
+	{
+		"name": "Games",
+		"path": "/games"
+	},
+	{
+		"name": "About",
+		"path": "/about"
+	}
+]

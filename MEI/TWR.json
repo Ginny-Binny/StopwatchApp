@@ -1,0 +1,291 @@
+[{
+    "_id": {
+        "$oid": "6214a8de6ac45940cd310d39"
+    },
+
+
+    "upgrades_stages": [23000, 37500, 60000, 90000, 130000, 182000, 255000, 356500, 499500, 699000, 979000, 1370000, 2250000],
+    "per_stars_upgrades": [{
+        "star": 1,
+        "stage_to_reach": 3,
+        "parts": {
+            "uncommon": {
+                "speed": 3,
+                "accel": 3,
+                "handl": 3,
+                "nitro": 3
+            },
+            "rare": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 2,
+        "stage_to_reach": 6,
+        "parts": {
+            "uncommon": {
+                "speed": 4,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 4
+            },
+            "rare": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 3,
+        "stage_to_reach": 8,
+        "parts": {
+            "uncommon": {
+                "speed": 6,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 6
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 0,
+                "accel": 0,
+                "handl": 0,
+                "nitro": 0
+            }
+        }
+    }, {
+        "star": 4,
+        "stage_to_reach": 10,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 2,
+                "accel": 3,
+                "handl": 3,
+                "nitro": 2
+            },
+            "epic": {
+                "speed": 1,
+                "accel": 1,
+                "handl": 1,
+                "nitro": 1
+            }
+        }
+    }, {
+        "star": 5,
+        "stage_to_reach": 12,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 6,
+                "handl": 6,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 3,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 3
+            },
+            "epic": {
+                "speed": 2,
+                "accel": 2,
+                "handl": 2,
+                "nitro": 2
+            }
+        }
+    }, {
+        "star": 6,
+        "stage_to_reach": 13,
+        "parts": {
+            "uncommon": {
+                "speed": 7,
+                "accel": 7,
+                "handl": 7,
+                "nitro": 7
+            },
+            "rare": {
+                "speed": 5,
+                "accel": 5,
+                "handl": 5,
+                "nitro": 5
+            },
+            "epic": {
+                "speed": 4,
+                "accel": 4,
+                "handl": 4,
+                "nitro": 4
+            }
+        }
+    }],
+    "images": ["https://i.imgur.com/vwgdJdt.png"],
+    "decals": [],
+    "shortcuts": [],
+    "car_id": "159",
+    "model": "JX220S TWR",
+    "brand": "Jaguar",
+    "max_star": 6,
+    "refill": "6h0",
+    "added": "Update 23",
+    "fuels": 3,
+    "rarity": "Epic",
+    "class": "S",
+    "stats": {
+        "0": {
+            "speed": 368,
+            "acceleration": 70.3,
+            "handling": 50.19,
+            "nitro": 67.37
+        },
+        "1": {
+            "speed": 369.8,
+            "acceleration": 70.94,
+            "handling": 51.54,
+            "nitro": 69.3
+        },
+        "2": {
+            "speed": 372.1,
+            "acceleration": 71.69,
+            "handling": 53.14,
+            "nitro": 71.57
+        },
+        "3": {
+            "speed": 374.5,
+            "acceleration": 72.49,
+            "handling": 54.84,
+            "nitro": 73.99
+        },
+        "4": {
+            "speed": 377,
+            "acceleration": 73.34,
+            "handling": 56.66,
+            "nitro": 76.43
+        },
+        "5": {
+            "speed": 379.9,
+            "acceleration": 74.36,
+            "handling": 58.88,
+            "nitro": 70.12
+        },
+        "6": {
+            "speed": 383.2,
+            "acceleration": 75.17,
+            "handling": 60.57,
+            "nitro": 82.21
+        },
+        "gold": {
+            "speed": 383.2,
+            "acceleration": 75.17,
+            "handling": 60.57,
+            "nitro": 82.21
+        }
+    },
+    "blueprints": {
+        "1": "\"Key",
+        "2": 40,
+        "3": 45,
+        "4": 60,
+        "5": 70,
+        "6": 85
+    },
+    "ranks": {
+        "0": 3089,
+        "1": 3229,
+        "2": 3396,
+        "3": 3573,
+        "4": 3758,
+        "5": 3973,
+        "6": null,
+        "gold": 4173
+    },
+    "parts": {
+        "uncommons": {
+            "per_stat": 7,
+            "cost_per_import": 90000
+        },
+        "rares": {
+            "per_stat": 5,
+            "cost_per_import": 180000
+        },
+        "epics": {
+            "per_stat": 4,
+            "cost_per_import": 540000
+        }
+    },
+    "electric": false,
+    "nitro_speeds": {
+        "yellow": null,
+        "blue": null,
+        "orange": null,
+        "shockwave": null
+    },
+    "drift_speed": null,
+    "shop": {
+        "epic": null,
+        "bp": {
+            "group": null,
+            "tc": null
+        }
+    },
+    "review": null,
+    "start_accel": "",
+    "comments": "",
+    "__v": 0,
+    "air_speed": null,
+    "walltest": {
+        "timer": "",
+        "speed": null
+    },
+    "specs": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "wheelbase": null,
+        "ground_clearance": {
+            "from": null,
+            "to": null
+        },
+        "weight": null,
+        "weight_distribution": null,
+        "seats": null,
+        "doors": null,
+        "body": null,
+        "power": null,
+        "torque": null,
+        "engine": null,
+        "drive_type": null,
+        "engine_placement": null,
+        "gearbox": null,
+        "top_speed": null,
+        "to100": null,
+        "to200": null,
+        "front_tyres": null,
+        "rear_tyres": null
+    }
+}]
