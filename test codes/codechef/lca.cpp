@@ -28,8 +28,8 @@ class LCATree
         }
         LCATree(int n, int root):n(n),root(root)
         {
-            graph = vector<vector<int> > (n)
-            parent = vector<int> (n)
+            graph = vector<vector<int> > (n);
+            parent = vector<int> (n);
             parent[root]=-1;
             d = vector<int> (n);
             size = vector<int> (n);
