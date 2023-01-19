@@ -173,5 +173,5 @@ struct NT
         if(n>1)
             res.push_back(n);
         return res;
-    }
+    
 };
