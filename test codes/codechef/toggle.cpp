@@ -28,4 +28,5 @@ int toggle(int n, vector<int> &arr){
         ooo=0;
 
     }
+    return gfg1;
 }
