@@ -8,9 +8,10 @@ void test_case(){
     cin>>a>>b>>f>>g;
     int answer=0;
     answer += h;
-    answer += min(a +f, d-a +d-f);
-    answer += min(b+g,w-b+w-g);
-
+    swap(w,d);
+    int tmp = min(a +f, d-a +d-f)+ abs(b-g);
+    int tmp2 = min(b+g,w-b+w-g)+ abs(a-f);
+    answer += min(tmp,tmp2);
     cout<<answer<<"\n";
 
 }
