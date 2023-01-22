@@ -14,7 +14,7 @@ void test_case(){
         int other_going=i;
         if(i==-1|| other_going>=a[i]){
             other_going=i+1;
-            if(i==n-1|| other_going<a[i]){
+            if(i==n-1|| other_going<a[i+1]){
                 answer++;
             }
         }
