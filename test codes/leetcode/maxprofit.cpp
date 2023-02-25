@@ -1,3 +1,8 @@
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
 int maxProfit(vector<int>& prices) {
     if (prices.empty()) {
         return 0;
