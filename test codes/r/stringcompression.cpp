@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+
+using namespace std;
 int compress(vector<char>& chars) {
     int n = chars.size();
     int i = 0, j = 0;
