@@ -1,4 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <unordered_map>
 
+using namespace std;
 
 int minSteps(vector<int>& arr) {
     int n = arr.size();
