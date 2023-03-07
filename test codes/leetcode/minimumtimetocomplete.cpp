@@ -1,14 +1,13 @@
-
 #include <vector>
 #include <algorithm>
 
 using namespace std;
 
-int minTime(vector<int>& time, int totalTrips) {
+long long minTime(vector<int>& time, int totalTrips) {
     int n = time.size();
-    int l = 0, r = 1e9;
+    long long l = 0, r = 1e18;
     while (l < r) {
-        int mid = l + (r - l) / 2;
+        long long mid = l + (r - l) / 2;
         long long trips = 0;
         for (int i = 0; i < n; i++) {
             trips += (mid / time[i]);
@@ -19,3 +18,4 @@ int minTime(vector<int>& time, int totalTrips) {
     }
     return l;
 }
+
