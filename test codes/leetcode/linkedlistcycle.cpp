@@ -1,3 +1,6 @@
+#include <vector>
+#include <queue>
+using namespace std;
 ListNode *detectCycle(ListNode *head) {
     ListNode *slow = head, *fast = head;
     while (fast != NULL && fast->next != NULL) {
