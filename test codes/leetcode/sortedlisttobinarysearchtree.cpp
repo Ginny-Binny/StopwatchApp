@@ -29,4 +29,3 @@ public:
     }
 };
 
-// Test the solution
