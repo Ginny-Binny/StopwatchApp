@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// Definition for singly-linked list.
 struct ListNode {
     int val;
     ListNode* next;
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-// Definition for a binary tree node.
 struct TreeNode {
     int val;
     TreeNode* left;
@@ -47,7 +45,6 @@ public:
     }
 };
 
-// Test the solution
 int main() {
     ListNode* head = new ListNode(-10);
     head->next = new ListNode(-3);
@@ -57,9 +54,6 @@ int main() {
     
     Solution sol;
     TreeNode* root = sol.sortedListToBST(head);
-    
-    // Test if the constructed tree is a binary search tree
-    // Inorder traversal should return sorted values
     function<void(TreeNode*)> inorder = [&](TreeNode* node) {
         if (!node) {
             return;
@@ -68,7 +62,7 @@ int main() {
         cout << node->val << " ";
         inorder(node->right);
     };
-    inorder(root); // expected output: -10 -3 0 5 9 
+    inorder(root);  
     
     return 0;
 }
