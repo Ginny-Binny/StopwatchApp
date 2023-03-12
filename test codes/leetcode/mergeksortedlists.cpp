@@ -22,3 +22,17 @@ public:
         return dummy.next;
     }
 };
+int main() {
+    vector<ListNode*> lists = {
+        createLinkedList({1, 4, 5}),
+        createLinkedList({1, 3, 4}),
+        createLinkedList({2, 6})
+    };
+
+    Solution sol;
+    ListNode* mergedList = sol.mergeKLists(lists);
+
+    printLinkedList(mergedList);
+
+    return 0;
+}
