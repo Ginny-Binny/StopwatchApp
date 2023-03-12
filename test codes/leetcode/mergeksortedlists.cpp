@@ -4,38 +4,38 @@ using namespace std;
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        auto cmp = [](ListNode* a, ListNode* b) { return a->val > b->val; };
-        priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq(cmp);
-
-        for (auto& head : lists) {
-            if (head) pq.push(head);
+        int n = lists.size();
+        if (n == 0) {
+            return nullptr;
+        } else if (n == 1) {
+            return lists[0];
         }
-
+        int mid = n / 2;
+        vector<ListNode*> left(lists.begin(), lists.begin() + mid);
+        vector<ListNode*> right(lists.begin() + mid, lists.end());
+        ListNode* leftMerged = mergeKLists(left);
+        ListNode* rightMerged = mergeKLists(right);
+        return mergeTwoLists(leftMerged, rightMerged);
+    }
+private:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
         ListNode dummy(0);
         ListNode* tail = &dummy;
-
-        while (!pq.empty()) {
-            ListNode* curr = pq.top();
-            pq.pop();
-            tail->next = curr;
-            tail = curr;
-            if (curr->next) pq.push(curr->next);
+        while (l1 && l2) {
+            if (l1->val < l2->val) {
+                tail->next = l1;
+                l1 = l1->next;
+            } else {
+                tail->next = l2;
+                l2 = l2->next;
+            }
+            tail = tail->next;
         }
-
+        if (l1) {
+            tail->next = l1;
+        } else {
+            tail->next = l2;
+        }
         return dummy.next;
     }
 };
-int main() {
-    vector<ListNode*> lists = {
-        createLinkedList({1, 4, 5}),
-        createLinkedList({1, 3, 4}),
-        createLinkedList({2, 6})
-    };
-
-    Solution sol;
-    ListNode* mergedList = sol.mergeKLists(lists);
-
-    printLinkedList(mergedList);
-
-    return 0;
-}
