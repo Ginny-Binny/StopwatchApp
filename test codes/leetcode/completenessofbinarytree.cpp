@@ -1,4 +1,5 @@
 #include<std/c++.h>
+using namespace std;
 class Solution {
 public:
     bool isCompleteTree(TreeNode* root) {
