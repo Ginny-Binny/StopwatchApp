@@ -1,3 +1,7 @@
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     unordered_map<int, int> inorder_map;
