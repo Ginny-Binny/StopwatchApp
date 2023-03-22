@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int minimumScorePath(int n, vector<vector<int>>& roads) {
+    int minimumScoreint n, vector<vector<int>>& roads) {
         vector<vector<int>> graph(n, vector<int>(n, INT_MAX));
         for (int i = 0; i < n; i++) {
             graph[i][i] = 0;
