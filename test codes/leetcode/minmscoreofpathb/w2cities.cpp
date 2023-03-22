@@ -1,28 +1,28 @@
-class Solution {
-public:
-    int minScore(int n, vector<vector<int>>& roads) {
-        vector<vector<int>> graph(n, vector<int>(n, INT_MAX));
-        for (int i = 0; i < n; i++) {
-            graph[i][i] = 0;
-        }
-        for (const auto& road : roads) {
-            int u = road[0] - 1;
-            int v = road[1] - 1;
-            int w = road[2];
-            graph[u][v] = min(graph[u][v], w);
-            graph[v][u] = min(graph[v][u], w);
-        }
-        
-        for (int k = 0; k < n; k++) {
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    if (graph[i][k] != INT_MAX && graph[k][j] != INT_MAX) {
-                        graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j]);
-                    }
-                }
-            }
-        }
-        
-        return graph[0][n-1];
-    }
-};
+class Solution:
+    def bfs(self, n: int, adj: List[List[Tuple[int, int]]]) -> int:
+        visited = [False] * (n+1)
+        q = deque()
+        answer = inf
+
+        q.append(1)
+        visited[1] = True
+
+        while q:
+            node = q.popleft()
+
+            for edge in adj[node]:
+                answer = min(answer, edge[1])
+                if not visited[edge[0]]:
+                    visited[edge[0]] = True
+                    q.append(edge[0])
+
+        return answer
+
+    def minScore(self, n: int, roads: List[List[int]]) -> int:
+        adj = [[] for _ in range(n+1)]
+
+        for road in roads:
+            adj[road[0]].append((road[1], road[2]))
+            adj[road[1]].append((road[0], road[2]))
+
+        return self.bfs(n, adj)
