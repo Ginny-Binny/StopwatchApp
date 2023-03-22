@@ -1,7 +1,6 @@
 class Solution {
 public:
     int minimumScorePath(int n, vector<vector<int>>& roads) {
-        // Create an adjacency matrix to represent the graph
         vector<vector<int>> graph(n, vector<int>(n, INT_MAX));
         for (int i = 0; i < n; i++) {
             graph[i][i] = 0;
@@ -14,7 +13,6 @@ public:
             graph[v][u] = min(graph[v][u], w);
         }
         
-        // Run Floyd-Warshall algorithm to find the shortest distance between any pair of nodes
         for (int k = 0; k < n; k++) {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
