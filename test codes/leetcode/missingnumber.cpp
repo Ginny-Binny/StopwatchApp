@@ -1,13 +1,14 @@
-#include <vector>
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        
+        int n = nums.size() ;
+        int sum = n * (n + 1)/2 ;
 
-using namespace std;
-
-int missingNumber(vector<int>& nums) {
-    int n = nums.size();
-    int expectedSum = n * (n + 1) / 2;
-    int actualSum = 0;
-    for (int i = 0; i < n; i++) {
-        actualSum += nums[i];
+        for (int i = 0 ; i < n ; i ++)
+        {
+            sum = sum - nums[i] ;
+        }
+        return sum ;
     }
-    return expectedSum - actualSum;
-}
+};
