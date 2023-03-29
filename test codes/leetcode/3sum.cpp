@@ -18,7 +18,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
             ans.push_back(triplet);
         return ans;
 }
-
+0  
 void display_ans(vector<vector<int>> temp)
 {
     for(auto triplet : temp) 
